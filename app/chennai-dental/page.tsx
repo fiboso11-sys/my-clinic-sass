@@ -1,20 +1,18 @@
-// app/page.tsx
-export default function Home() {
+// app/chennai-dental/page.tsx
+export default function ChennaiDentalClinic() {
   return (
     <main
       style={{
         fontFamily: "sans-serif",
-        backgroundImage: "url('/dental-clinic-bg.jpg')", // Make sure this file is inside /public
-        backgroundSize: "cover",
-        backgroundPosition: "center",
         minHeight: "100vh",
+        backgroundColor: "#f9f9f9",
         padding: "2rem",
         color: "#2c3e50",
       }}
     >
       <div
         style={{
-          backgroundColor: "rgba(255,255,255,0.9)",
+          backgroundColor: "#fff",
           borderRadius: "12px",
           padding: "2rem",
           maxWidth: "800px",
