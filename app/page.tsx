@@ -1,49 +1,100 @@
-// app/page.tsx
 export default function Home() {
   return (
-    <main style={{ fontFamily: "sans-serif", padding: "2rem", maxWidth: "800px", margin: "0 auto" }}>
-      <h1 style={{ textAlign: "center", color: "#2c3e50" }}>Clinic SaaS Dashboard</h1>
-      <p style={{ textAlign: "center", marginBottom: "2rem" }}>
-        Manage appointments, collect payments, and subscribe to our SaaS service.
-      </p>
+    <main
+      style={{
+        fontFamily: "sans-serif",
+        backgroundImage: "url('/clinic-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "100vh",
+        padding: "2rem",
+        color: "#2c3e50",
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "rgba(255,255,255,0.85)",
+          borderRadius: "12px",
+          padding: "2rem",
+          maxWidth: "800px",
+          margin: "0 auto",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+        }}
+      >
+        <h1 style={{ textAlign: "center", color: "#1a5276" }}>
+          Chennai Dental Clinic Dashboard
+        </h1>
+        <p style={{ textAlign: "center", marginBottom: "2rem" }}>
+          Powered by <strong>Kodikz</strong> — Manage appointments, collect payments, and subscribe to our SaaS service.
+        </p>
 
-      {/* Appointment Booking Section */}
-      <section style={{ marginBottom: "2rem", padding: "1rem", border: "1px solid #ddd", borderRadius: "8px" }}>
-        <h2>Book an Appointment</h2>
-        <form>
-          <label>
-            Patient Name:
-            <input type="text" name="name" style={{ marginLeft: "1rem" }} />
-          </label>
-          <br /><br />
-          <label>
-            Date:
-            <input type="date" name="date" style={{ marginLeft: "1rem" }} />
-          </label>
-          <br /><br />
-          <button type="submit" style={{ background: "#3498db", color: "#fff", padding: "0.5rem 1rem", border: "none", borderRadius: "4px" }}>
-            Book Appointment
+        {/* Appointment Section */}
+        <section style={{ marginBottom: "2rem" }}>
+          <h2>Book an Appointment</h2>
+          <form>
+            <label>
+              Patient Name:
+              <input type="text" name="name" style={{ marginLeft: "1rem" }} />
+            </label>
+            <br /><br />
+            <label>
+              Date:
+              <input type="date" name="date" style={{ marginLeft: "1rem" }} />
+            </label>
+            <br /><br />
+            <button
+              type="submit"
+              style={{
+                background: "#3498db",
+                color: "#fff",
+                padding: "0.5rem 1rem",
+                border: "none",
+                borderRadius: "4px",
+              }}
+            >
+              Book Appointment
+            </button>
+          </form>
+        </section>
+
+        {/* Payment Section */}
+        <section style={{ marginBottom: "2rem" }}>
+          <h2>Pay Clinic Fees</h2>
+          <p>Click below to pay securely via UPI.</p>
+          <button
+            style={{
+              background: "#27ae60",
+              color: "#fff",
+              padding: "0.5rem 1rem",
+              border: "none",
+              borderRadius: "4px",
+            }}
+          >
+            Pay with UPI
           </button>
-        </form>
-      </section>
+        </section>
 
-      {/* Payment Section */}
-      <section style={{ marginBottom: "2rem", padding: "1rem", border: "1px solid #ddd", borderRadius: "8px" }}>
-        <h2>Pay Clinic Fees</h2>
-        <p>Click below to pay securely via UPI.</p>
-        <button style={{ background: "#27ae60", color: "#fff", padding: "0.5rem 1rem", border: "none", borderRadius: "4px" }}>
-          Pay with UPI
-        </button>
-      </section>
+        {/* Subscription Section */}
+        <section>
+          <h2>Subscribe to SaaS</h2>
+          <p>Get full access to clinic management features.</p>
+          <button
+            style={{
+              background: "#e67e22",
+              color: "#fff",
+              padding: "0.5rem 1rem",
+              border: "none",
+              borderRadius: "4px",
+            }}
+          >
+            Subscribe Now
+          </button>
+        </section>
 
-      {/* Subscription Section */}
-      <section style={{ padding: "1rem", border: "1px solid #ddd", borderRadius: "8px" }}>
-        <h2>Subscribe to SaaS</h2>
-        <p>Get full access to clinic management features.</p>
-        <button style={{ background: "#e67e22", color: "#fff", padding: "0.5rem 1rem", border: "none", borderRadius: "4px" }}>
-          Subscribe Now
-        </button>
-      </section>
+        <footer style={{ textAlign: "center", marginTop: "2rem", fontSize: "0.9rem", color: "#555" }}>
+          © 2026 Kodikz — Empowering Chennai Dental Clinic with smart SaaS solutions.
+        </footer>
+      </div>
     </main>
   );
 }
